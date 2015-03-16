@@ -11,14 +11,14 @@ to have `numpy` and `cython` installed.
 
 ## Usage
 
-	import pychem
-	pychem.init()
-	molNames = pychem.getMolecules()
+	import pyAbundance as pa
+	pa.init()
+	molNames = pa.getMolecules()
 
 	T = np.linspace(6000.,8000., 50)
 	Pg = 1.e17 * 1.381e-16 * T
 
-	out = pychem.abundance(T, Pg)
+	out = pa.abundance(T, Pg)
 
 The output is a dictionary that can be accessed through molecule names
 
